@@ -1,7 +1,7 @@
 package com.company;
 import java.util.*;
 
-
+//Codigo copiado literal del libro de texto de la clase
 public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E> {
 
     protected Vector<E> data; // the data, kept in heap order
@@ -64,6 +64,16 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E> {
     {
         data.add(value);
         percolateUp(data.size() - 1);
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
+    public int size() {
+        return 0;
     }
 
     protected void pushDownRoot(int root)

@@ -1,6 +1,6 @@
 package com.company;
 
-    public class Paciente <E extends Comparable<E>> {
+    public class Paciente implements Comparable<Paciente>{
         public String Nombre;
         public String Condicion;
         public String Importancia;
@@ -10,5 +10,7 @@ package com.company;
             this.Condicion = Condicion;
             this.Importancia = Importancia;
         }
-
+        public int compareTo (Paciente o){
+            return Importancia.compareTo(o.Importancia);
+        }
     }
