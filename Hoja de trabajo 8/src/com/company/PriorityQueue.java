@@ -1,6 +1,8 @@
 package com.company;
 
-//Codigo copiado literal del libro de texto de la clase
+/**
+ * Codigo copiado literal del libro de texto de la clase
+ */
 public interface PriorityQueue<E> {
     E getFirst();
     // pre: !isEmpty()
